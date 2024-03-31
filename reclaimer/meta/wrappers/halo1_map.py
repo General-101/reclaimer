@@ -710,7 +710,7 @@ class Halo1Map(HaloMap):
                 max_dim = max(1, bitmap.width, bitmap.height)
 
                 # subtract 2 to account for width/height of 1 or 2 not having mips
-                maxmips = int(max(0, math.log(max_dim, 2) - 2))
+                maxmips = int(max(0, log(max_dim, 2) - 2))
 
                 # clip mipmap count to max and min number that can exist
                 bitmap.mipmaps = max(0, min(maxmips, bitmap.mipmaps))
