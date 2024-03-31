@@ -14,7 +14,7 @@ import math
 
 from ..constants import JMS_PERM_CANNOT_BE_RANDOMLY_CHOSEN_TOKEN,\
     JMS_VER_HALO_1_TRI_REGIONS, JMS_VER_HALO_1_3D_UVWS,\
-    JMS_VER_HALO_1_MARKER_RADIUS
+    JMS_VER_HALO_1_MARKER_RADIUS, JMS_VER_HALO_1_RETAIL
 
 
 class JmsModel:
@@ -36,7 +36,7 @@ class JmsModel:
 
     def __init__(self, name="", node_list_checksum=0, nodes=None,
                  materials=None, markers=None, regions=None,
-                 verts=None, tris=None, version="8200"):
+                 verts=None, tris=None, version=JMS_VER_HALO_1_RETAIL):
 
         name = name.strip(" ")
         perm_name = name
